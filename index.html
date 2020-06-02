@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculatrice Simplon</title>
+</head>
+<body>
+	<center><h1>Coupe TCVA</h1></center>
+	<div>
+	</div>
+	<div class="container">
+		
+		<div class="methode-1">
+			<form onSubmit="return false;">
+				<select id="selectOperation">
+					<option value="246">246</option>
+					<option value="cassis">cassis</option>
+					<option value="133">133</option>
+				</select>
+				<input type="text" id="input1" placeholder="Largeur X">
+				<input type="text" id="input2" placeholder="Avancée Y">
+			</form>
+			<form onSubmit="return false;">
+				<select id="manoeuvre">
+					<option value="gauche">Gauche</option>
+					<option value="droite">Droite</option>
+				</select>
+			</form>
+			<form onSubmit="return false;">
+				<select id="motorisation">
+					<option value="moteur">Moteur</option>
+					<option value="treuil">Treuil</option>
+				</select>
+			</form>
+			CE = <span id="result">?</span> </br>
+			CE capot cassis = <span id="capot">?</span> </br>
+			TO 78 = <span id="To">?</span> </br>
+			PU 246 = <span id="Pu">?</span> </br>
+		</div>
+		<button id="buttonForm">Calculer</button> </br>
+		<input type="button" onclick='window.location.reload(false)' value="Rafraichir"/>
+		
+		
+		
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<script src="app.js"></script>
+	<script src="app2.js"></script>
+</body>
+</html>
